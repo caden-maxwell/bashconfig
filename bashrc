@@ -1,5 +1,4 @@
-# Default code should be up here
-
+# ------------- Bash Configs from Git -------------
 
 alias rm='rm -i'
 alias cp="cp -i"
@@ -11,7 +10,7 @@ function mkcd {
 }
 
 
-# Start SSH Agent
+# Auto-start ssh-agent
 
 env=~/.ssh/agent.env
 
@@ -65,5 +64,3 @@ function shortcutDelete {
 	unset tmp
 }
 
-
-cd # Go to home folder at startup
