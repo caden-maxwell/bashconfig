@@ -5,9 +5,10 @@ alias rm='rm -i'
 alias cp="cp -i"
 
 # git
-alias glog="git log --all --graph"
+alias gl="git log --all --graph"
 alias ga="git add ."
 alias gs="git status"
+alias gp="git push"
 
 # ls
 alias ll='ls -alF'
