@@ -4,7 +4,13 @@ PS1="\n"						# new line
 PS1="$PS1"'\[\e[38;5;41m\]'		# change to green
 PS1="$PS1"'\u@\h '				# user@host[space]
 PS1="$PS1"'\[\033[35m\]'		# change to purple
-PS1="$PS1"'WSL '				# Print WSL
+
+if [[ $MSYSTEM == "MINGW64" ]]; then
+    PS1="$PS1"'MINGW64 '            # Print MINGW64
+else
+    PS1="$PS1"'WSL '                # Print WSL
+fi
+
 PS1="$PS1"'\[\e[38;5;69m\]'		# change to blue
 PS1="$PS1"'\w'					# current working directory
 if test -f "$HOME/.git-prompt.sh"
