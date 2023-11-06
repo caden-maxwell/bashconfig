@@ -9,6 +9,7 @@ alias gl="git log --all --graph"
 alias ga="git add ."
 alias gs="git status"
 alias gp="git push"
+alias gpl="git pull"
 
 # ls
 alias ll='ls -alF'
