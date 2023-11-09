@@ -17,7 +17,11 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # python venv
-alias activate='source .venv/bin/activate'
+if [[ $MSYSTEM == "MINGW64" ]]; then
+	alias activate='. .venv/Scripts/activate'
+else
+	alias activate='source .venv/bin/activate'
+fi
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
