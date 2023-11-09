@@ -6,7 +6,7 @@ alias cp="cp -i"
 
 # git
 alias gl="git log --all --graph"
-alias ga="git add ."
+alias ga="git add"
 alias gs="git status"
 alias gp="git push"
 alias gpl="git pull"
